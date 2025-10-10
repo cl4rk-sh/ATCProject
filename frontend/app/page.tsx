@@ -120,13 +120,13 @@ export default function Home() {
             {prevAudioUrl && (
               <div>
                 <div className="text-sm mb-1">Prev Segment</div>
-                <AudioPlayer src={prevAudioUrl} autoPlay={false} />
+                <AudioPlayer src={prevAudioUrl} autoPlay={false} showJumpControls={false} showSkipControls={false} />
               </div>
             )}
             {nextAudioUrl && (
               <div>
                 <div className="text-sm mb-1">Next Segment</div>
-                <AudioPlayer src={nextAudioUrl} autoPlay={false} />
+                <AudioPlayer src={nextAudioUrl} autoPlay={false} showJumpControls={false} showSkipControls={false} />
               </div>
             )}
           </div>

@@ -70,3 +70,4 @@ To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/Codi
 (Use `node --trace-warnings ...` to show where the warning was created)
  ✓ Compiled / in 2s
  GET / 200 in 2335ms
+ ✓ Compiled in 390ms
