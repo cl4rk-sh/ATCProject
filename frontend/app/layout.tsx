@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import "react-h5-audio-player/lib/styles.css";
 import { Metadata } from "next";
 import clsx from "clsx";
 import { Providers } from "./providers";
