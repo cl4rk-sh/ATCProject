@@ -65,3 +65,8 @@ INFO:     127.0.0.1:57892 - "GET /audio/segment?timestamp=1759945556&relation=pr
 INFO:     127.0.0.1:57895 - "GET /context?timestamp=1759946310&adsb_past_s=0&adsb_future_s=0&audio_past_s=20&audio_future_s=10 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57892 - "GET /audio/segment?timestamp=1759946310&relation=next&future_s=10.0 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57889 - "GET /audio/segment?timestamp=1759946310&relation=prev&past_s=20.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63341 - "GET /context?timestamp=1759944600&adsb_past_s=20&adsb_future_s=20&audio_past_s=20&audio_future_s=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63348 - "GET /audio/segment?timestamp=1759944600&relation=prev&past_s=20.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63349 - "GET /audio/segment?timestamp=1759944600&relation=next&future_s=20.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63352 - "GET /audio/segment?timestamp=1759944600&relation=prev&past_s=20.0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63353 - "GET /audio/segment?timestamp=1759944600&relation=next&future_s=20.0 HTTP/1.1" 200 OK

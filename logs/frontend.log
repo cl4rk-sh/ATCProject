@@ -71,3 +71,4 @@ To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/Codi
  ✓ Compiled / in 2s
  GET / 200 in 2335ms
  ✓ Compiled in 390ms
+ GET / 200 in 260ms
