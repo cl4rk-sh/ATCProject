@@ -1,0 +1,18 @@
+0 verbose cli /usr/local/bin/node /usr/local/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/.npmrc
+5 silly config load:file:/Users/clarkwang/.npmrc
+6 silly config load:file:/Users/clarkwang/.npm-global/etc/npmrc
+7 verbose title npm exec prisma migrate dev -n add_airline_relation
+8 verbose argv "exec" "--" "prisma" "migrate" "dev" "-n" "add_airline_relation"
+9 verbose logfile logs-max:10 dir:/Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/.npm-cache/_logs/2025-10-23T19_22_48_290Z-
+10 verbose logfile /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/.npm-cache/_logs/2025-10-23T19_22_48_290Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend
+13 verbose os Darwin 24.3.0
+14 verbose node v22.12.0
+15 verbose npm  v10.9.0
+16 verbose exit 0
+17 info ok

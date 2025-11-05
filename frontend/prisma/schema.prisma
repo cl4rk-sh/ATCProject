@@ -1,0 +1,128 @@
+// Prisma schema for ADS-B snapshots and aircraft tracking
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Aircraft {
+  id           String   @id @db.Text // ICAO hex (e.g., "a7dc99")
+  registration String?  @db.Text     // r
+  model        String?  @db.Text     // t
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // Relations
+  observations SnapshotAircraft[]
+
+  @@index([registration])
+}
+
+model Snapshot {
+  id             Int       @id @default(autoincrement())
+  capturedAt     DateTime
+  centerLat      Float?
+  centerLon      Float?
+  radiusNm       Float?
+  endpoint       String?   @db.Text
+  total          Int?
+  providerNowMs  BigInt?
+  createdAt      DateTime  @default(now())
+
+  // Relations
+  aircraft SnapshotAircraft[]
+
+  @@index([capturedAt])
+}
+
+model SnapshotAircraft {
+  id              Int      @id @default(autoincrement())
+
+  // Relations
+  snapshotId Int
+  snapshot   Snapshot @relation(fields: [snapshotId], references: [id], onDelete: Cascade)
+
+  aircraftId String
+  aircraft   Aircraft @relation(fields: [aircraftId], references: [id])
+
+  // Identity & meta
+  type        String?  @db.Text
+  flight      String?  @db.Text
+  // Airline relation derived from flight prefix (ICAO code)
+  airlineId   Int?
+  airline     Airline? @relation("AirlineToSnapshotAircraft", fields: [airlineId], references: [id])
+  registration String? @db.Text // duplicate convenience; source "r"
+  model        String?  @db.Text // duplicate convenience; source "t"
+
+  // Kinematics
+  altBaroRaw   String?  @db.Text // original alt_baro field (string or number)
+  altBaroFt    Int?
+  altGeomFt    Int?
+  gsKts        Float?
+  trackDeg     Float?
+  trueHeadingDeg Float?
+  baroRateFpm  Int?
+  geomRateFpm  Int?
+  squawk       String?  @db.Text
+  emergency    String?  @db.Text
+  category     String?  @db.Text
+
+  // Position & quality
+  lat          Float?
+  lon          Float?
+  nic          Int?
+  rc           Int?
+  version      Int?
+  nac_p        Int?
+  nac_v        Int?
+  sil          Int?
+  sil_type     String?  @db.Text
+  gva          Int?
+  sda          Int?
+  alert        Boolean?
+  spi          Boolean?
+  messages     Int?
+  seenSeconds  Float?
+  rssi         Float?
+  dstNm        Float?
+  dirDeg       Float?
+
+  // Navigation
+  nav_qnh_hpa       Float?
+  nav_altitude_mcp  Int?
+  nav_heading_deg   Float?
+  nav_modes         String[] // text[]
+
+  // Raw arrays and extra payload
+  mlat  Json?
+  tisb  Json?
+  extra Json?
+
+  @@unique([snapshotId, aircraftId])
+  @@index([snapshotId])
+  @@index([aircraftId])
+  @@index([flight])
+  @@index([airlineId])
+  @@index([lat, lon])
+}
+
+
+model Airline {
+  id        Int      @id @default(autoincrement())
+  icaoCode  String   @unique @db.Text
+  callsign  String?  @db.Text
+  name      String?  @db.Text
+  iataCode  String?  @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  snapshotAircraft SnapshotAircraft[] @relation("AirlineToSnapshotAircraft")
+
+  @@index([name])
+}
+
+

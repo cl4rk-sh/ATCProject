@@ -387,3 +387,83 @@ BACKEND_HEALTH_URL = "https://<render-app>/health?token=<secret>"
 TBD (Academic/Research Only). Consider MIT/Apache-2.0 for code and a data usage notice.
 
 
+
+---
+
+## Database (Postgres + Prisma)
+
+### Overview
+- Local Postgres (Homebrew) with Prisma ORM in the frontend (`frontend/`)
+- Database: `atc_project` on `localhost:5432` (schema `public`)
+- Prisma models live in `frontend/prisma/schema.prisma`
+
+### Install and start Postgres (macOS/Homebrew)
+```bash
+brew install postgresql@16
+brew services start postgresql@16
+# Data directory: /opt/homebrew/var/postgresql@16
+```
+
+### Create role and database
+```bash
+# Add psql to PATH for this shell
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+# Create login role for Prisma (idempotent if already exists)
+psql -d postgres -c "DO $$ BEGIN IF NOT EXISTS (SELECT FROM pg_roles WHERE rolname = 'atc_user') THEN CREATE ROLE atc_user LOGIN PASSWORD 'atc_password'; END IF; END $$;"
+
+# Create database owned by that role
+createdb -O atc_user atc_project || true
+
+# Ensure schema ownership & privileges
+psql -d atc_project -c "ALTER SCHEMA public OWNER TO atc_user; GRANT ALL ON SCHEMA public TO atc_user;"
+
+# Allow Prisma to create a shadow DB during migrate
+psql -d postgres -c "ALTER ROLE atc_user CREATEDB;"
+```
+
+### Configure Prisma connection
+Create/update `frontend/.env` (not committed):
+```env
+DATABASE_URL=postgresql://atc_user:atc_password@localhost:5432/atc_project?schema=public
+```
+
+### Generate client and run migrations
+```bash
+cd frontend
+npm i -D prisma && npm i @prisma/client   # if not installed yet
+npx prisma generate
+npx prisma migrate dev --name init
+```
+
+### Verify database contents
+```bash
+/opt/homebrew/opt/postgresql@16/bin/psql "postgresql://atc_user:atc_password@localhost:5432/atc_project"
+-- inside psql
+\dt            -- list tables
+SELECT COUNT(*) FROM "Snapshot";
+```
+
+### Using Prisma in server code
+Use the shared client in `frontend/lib/prisma.ts`:
+```ts
+import { prisma } from "@/lib/prisma";
+
+export async function GET() {
+  const snapshots = await prisma.snapshot.findMany({ take: 5, orderBy: { capturedAt: "desc" } });
+  return Response.json(snapshots);
+}
+```
+
+### Troubleshooting
+- Check Postgres is listening:
+```bash
+pg_isready -h localhost -p 5432
+```
+- Prisma P1010 (user denied): ensure the role exists and the connection string is correct.
+- Prisma P3014 (shadow DB): run `ALTER ROLE atc_user CREATEDB;` or use a superuser during migration.
+- Drift detected: dev-only reset (drops all data):
+```bash
+cd frontend
+npx prisma migrate reset --force --skip-seed   # dev only, destructive
+```

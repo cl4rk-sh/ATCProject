@@ -5,36 +5,150 @@
    ▲ Next.js 15.3.1 (Turbopack)
    - Local:        http://localhost:3000
    - Network:      http://127.0.2.2:3000
+   - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 878ms
+ ✓ Ready in 2.4s
  ○ Compiling / ...
-(node:73743) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1760122949853 is not specified and it doesn't parse as CommonJS.
+(node:26411) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1761243856001 is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
- ✓ Compiled / in 2.1s
- GET / 200 in 2388ms
- GET / 200 in 74ms
- GET / 200 in 68ms
- GET / 200 in 65ms
- GET / 200 in 62ms
-(node:76498) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1760123189108 is not specified and it doesn't parse as CommonJS.
+ ✓ Compiled / in 2.5s
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 3150ms
+ ✓ Compiled /api/snapshot in 453ms
+ GET /api/snapshot?ts=1759944600 200 in 802ms
+ ✓ Compiled /api/aircraft/route in 251ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944600 200 in 310ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 76ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a3e011&minutes=15&max=200&ts=1759944600 200 in 29ms
+ GET /api/aircraft/route?hex=4a91b2&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/snapshot?ts=1759944632 200 in 28ms
+ GET /api/snapshot?ts=1759944634 200 in 30ms
+ GET /api/snapshot?ts=1759944636 200 in 29ms
+ GET /api/snapshot?ts=1759944648 200 in 26ms
+ GET /api/snapshot?ts=1759944666 200 in 29ms
+ GET /api/snapshot?ts=1759944680 200 in 38ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944680 200 in 30ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944680 200 in 34ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944680 200 in 27ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944680 200 in 28ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944680 200 in 29ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944680 200 in 27ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944680 200 in 27ms
+ GET /api/aircraft/route?hex=a99684&minutes=15&max=200&ts=1759944680 200 in 31ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944680 200 in 29ms
+ GET /api/aircraft/route?hex=aaf228&minutes=15&max=200&ts=1759944680 200 in 27ms
+ GET /api/aircraft/route?hex=aaf228&minutes=15&max=200&ts=1759944680 200 in 28ms
+ GET /api/aircraft/route?hex=a5cf19&minutes=15&max=200&ts=1759944680 200 in 27ms
+ GET /api/aircraft/route?hex=a5cf19&minutes=15&max=200&ts=1759944680 200 in 31ms
+ GET /api/aircraft/route?hex=a5cf19&minutes=15&max=200&ts=1759944680 200 in 26ms
+ GET /api/aircraft/route?hex=a5cf19&minutes=15&max=200&ts=1759944680 200 in 27ms
+ GET /api/aircraft/route?hex=a5a659&minutes=15&max=200&ts=1759944680 200 in 25ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759944680 200 in 27ms
+ GET /api/snapshot?ts=1759945526 200 in 24ms
+ GET /api/aircraft/route?hex=a72249&minutes=15&max=200&ts=1759945526 200 in 32ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945526 200 in 35ms
+ GET /api/snapshot?ts=1759945580 200 in 26ms
+ GET /api/snapshot?ts=1759945582 200 in 22ms
+ GET /api/snapshot?ts=1759945598 200 in 27ms
+ GET /api/aircraft/route?hex=a72249&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945598 200 in 37ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945598 200 in 35ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945598 200 in 42ms
+ GET /api/aircraft/route?hex=a86e35&minutes=15&max=200&ts=1759945598 200 in 29ms
+ GET /api/aircraft/route?hex=aa7dad&minutes=15&max=200&ts=1759945598 200 in 38ms
+ GET /api/aircraft/route?hex=4406de&minutes=15&max=200&ts=1759945598 200 in 40ms
+ GET /api/aircraft/route?hex=4406de&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 32ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 37ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 36ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 39ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945598 200 in 31ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945598 200 in 30ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 31ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 29ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 37ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945598 200 in 35ms
+ GET /api/aircraft/route?hex=a35da8&minutes=15&max=200&ts=1759945598 200 in 37ms
+ GET /api/aircraft/route?hex=a35da8&minutes=15&max=200&ts=1759945598 200 in 44ms
+ GET /api/aircraft/route?hex=a35da8&minutes=15&max=200&ts=1759945598 200 in 37ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 42ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 35ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 38ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945598 200 in 38ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 37ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 39ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945598 200 in 35ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945598 200 in 47ms
+ GET /api/aircraft/route?hex=a72249&minutes=15&max=200&ts=1759945598 200 in 37ms
+ GET /api/aircraft/route?hex=a7270e&minutes=15&max=200&ts=1759945598 200 in 39ms
+ GET /api/aircraft/route?hex=a6c66c&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=a14104&minutes=15&max=200&ts=1759945598 200 in 31ms
+ GET /api/aircraft/route?hex=a14104&minutes=15&max=200&ts=1759945598 200 in 29ms
+ GET /api/aircraft/route?hex=a05629&minutes=15&max=200&ts=1759945598 200 in 31ms
+ GET /api/aircraft/route?hex=a05629&minutes=15&max=200&ts=1759945598 200 in 28ms
+ GET /api/aircraft/route?hex=a05629&minutes=15&max=200&ts=1759945598 200 in 45ms
+ GET /api/aircraft/route?hex=a05629&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=a05629&minutes=15&max=200&ts=1759945598 200 in 50ms
+ GET /api/aircraft/route?hex=a05629&minutes=15&max=200&ts=1759945598 200 in 32ms
+ GET /api/aircraft/route?hex=a8e24d&minutes=15&max=200&ts=1759945598 200 in 43ms
+ GET /api/aircraft/route?hex=a8e24d&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=4406de&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=aa7dad&minutes=15&max=200&ts=1759945598 200 in 30ms
+ GET /api/aircraft/route?hex=ad7b17&minutes=15&max=200&ts=1759945598 200 in 28ms
+ GET /api/aircraft/route?hex=ad7b17&minutes=15&max=200&ts=1759945598 200 in 28ms
+ GET /api/aircraft/route?hex=ad7b17&minutes=15&max=200&ts=1759945598 200 in 27ms
+ GET /api/aircraft/route?hex=ad7b17&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945598 200 in 43ms
+ GET /api/aircraft/route?hex=a03bcd&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 32ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 35ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 34ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 43ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 33ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945598 200 in 37ms
+(node:35776) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1761244645038 is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
- ○ Compiling / ...
-
-> next-app-template@0.0.1 dev
-> next dev --turbopack
-
- ⚠ Port 3000 is in use, using available port 3001 instead.
-   ▲ Next.js 15.3.1 (Turbopack)
-   - Local:        http://localhost:3001
-   - Network:      http://127.0.2.2:3001
-
- ✓ Starting...
- ✓ Ready in 892ms
+(node:38271) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1761244838939 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945598 200 in 64ms
+(node:62741) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1761247061653 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:64478) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1761247345913 is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ GET /api/aircraft/route?hex=a35da8&minutes=15&max=200&ts=1759945598 200 in 62ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945598 200 in 40ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945598 200 in 51ms
+ GET /api/aircraft/route?hex=a4a114&minutes=15&max=200&ts=1759945598 200 in 34ms
 
 > next-app-template@0.0.1 dev
 > next dev --turbopack
@@ -42,33 +156,927 @@ To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/Codi
    ▲ Next.js 15.3.1 (Turbopack)
    - Local:        http://localhost:3000
    - Network:      http://127.0.2.2:3000
+   - Environments: .env
 
  ✓ Starting...
- ✓ Ready in 912ms
+ ✓ Ready in 1071ms
  ○ Compiling / ...
-(node:82699) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1760123704448 is not specified and it doesn't parse as CommonJS.
+(node:14971) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1761934704181 is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
- ✓ Compiled / in 2.4s
- GET / 200 in 2794ms
-[?25h
-
-> next-app-template@0.0.1 dev
-> next dev --turbopack
-
-   ▲ Next.js 15.3.1 (Turbopack)
-   - Local:        http://localhost:3000
-   - Network:      http://127.0.2.2:3000
-
- ✓ Starting...
- ✓ Ready in 895ms
- ○ Compiling / ...
-(node:83349) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/tailwind.config.js?id=1760123746016 is not specified and it doesn't parse as CommonJS.
-Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
-To eliminate this warning, add "type": "module" to /Users/clarkwang/Desktop/CodingMisc/ATCProject/frontend/package.json.
-(Use `node --trace-warnings ...` to show where the warning was created)
- ✓ Compiled / in 2s
- GET / 200 in 2335ms
- ✓ Compiled in 390ms
- GET / 200 in 260ms
+ ✓ Compiled / in 3.1s
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 3758ms
+ ✓ Compiled /api/snapshot in 484ms
+ GET /api/snapshot?ts=1759944600 200 in 640ms
+ ✓ Compiled /api/aircraft/route in 266ms
+ GET /api/aircraft/route?hex=a53f5b&minutes=15&max=200&ts=1759944600 200 in 320ms
+ GET /api/aircraft/route?hex=a5cf19&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=ad4930&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=ad4930&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=ad4930&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=ad4930&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/snapshot?ts=1759945144 200 in 32ms
+ GET /api/snapshot?ts=1759945194 200 in 28ms
+ GET /api/snapshot?ts=1759945252 200 in 28ms
+ GET /api/snapshot?ts=1759945326 200 in 23ms
+ GET /api/snapshot?ts=1759945372 200 in 34ms
+ GET /api/snapshot?ts=1759945366 200 in 28ms
+ GET /api/aircraft/route?hex=aa9679&minutes=15&max=200&ts=1759945366 200 in 53ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945366 200 in 53ms
+ GET /api/aircraft/route?hex=aa9679&minutes=15&max=200&ts=1759945366 200 in 27ms
+ GET /api/aircraft/route?hex=aa9679&minutes=15&max=200&ts=1759945366 200 in 34ms
+ GET /api/aircraft/route?hex=aa9679&minutes=15&max=200&ts=1759945366 200 in 28ms
+ GET /api/aircraft/route?hex=aa9679&minutes=15&max=200&ts=1759945366 200 in 29ms
+ GET /api/aircraft/route?hex=ac578c&minutes=15&max=200&ts=1759945366 200 in 46ms
+ GET /api/aircraft/route?hex=a12758&minutes=15&max=200&ts=1759945366 200 in 32ms
+ GET /api/aircraft/route?hex=a12758&minutes=15&max=200&ts=1759945366 200 in 28ms
+ GET /api/aircraft/route?hex=a04f75&minutes=15&max=200&ts=1759945366 200 in 41ms
+ GET /api/aircraft/route?hex=a89d22&minutes=15&max=200&ts=1759945366 200 in 33ms
+ GET /api/aircraft/route?hex=a89d22&minutes=15&max=200&ts=1759945366 200 in 35ms
+ GET /api/aircraft/route?hex=a04f75&minutes=15&max=200&ts=1759945366 200 in 29ms
+ GET /api/aircraft/route?hex=ab8f8e&minutes=15&max=200&ts=1759945366 200 in 43ms
+ GET /api/aircraft/route?hex=ab8f8e&minutes=15&max=200&ts=1759945366 200 in 32ms
+ GET /api/aircraft/route?hex=ab8f8e&minutes=15&max=200&ts=1759945366 200 in 33ms
+ GET /api/aircraft/route?hex=ab8f8e&minutes=15&max=200&ts=1759945366 200 in 33ms
+ GET /api/aircraft/route?hex=ab8f8e&minutes=15&max=200&ts=1759945366 200 in 31ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945366 200 in 33ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945366 200 in 30ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945366 200 in 34ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945366 200 in 37ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945366 200 in 38ms
+ GET /api/snapshot?ts=1759945370 200 in 21ms
+ GET /api/snapshot?ts=1759945372 200 in 26ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945372 200 in 31ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945372 200 in 26ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945372 200 in 31ms
+ GET /api/aircraft/route?hex=491d87&minutes=15&max=200&ts=1759945372 200 in 45ms
+ GET /api/aircraft/route?hex=a8352f&minutes=15&max=200&ts=1759945372 200 in 27ms
+ GET /api/aircraft/route?hex=a2b10b&minutes=15&max=200&ts=1759945372 200 in 28ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759945372 200 in 32ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759945372 200 in 91ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945372 200 in 35ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945372 200 in 30ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945372 200 in 31ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945372 200 in 47ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945372 200 in 35ms
+ GET /api/aircraft/route?hex=ab62ad&minutes=15&max=200&ts=1759945372 200 in 33ms
+ GET /api/aircraft/route?hex=aa9679&minutes=15&max=200&ts=1759945372 200 in 28ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945372 200 in 40ms
+ GET /api/snapshot?ts=1759945368 200 in 25ms
+ GET /api/snapshot?ts=1759945366 200 in 25ms
+ GET /api/snapshot?ts=1759945364 200 in 29ms
+ GET /api/snapshot?ts=1759945366 200 in 31ms
+ GET /api/snapshot?ts=1759945368 200 in 37ms
+ GET /api/snapshot?ts=1759945370 200 in 25ms
+ GET /api/snapshot?ts=1759945372 200 in 33ms
+ GET /api/snapshot?ts=1759945374 200 in 31ms
+ GET /api/aircraft/route?hex=a12758&minutes=15&max=200&ts=1759945374 200 in 45ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945374 200 in 34ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945374 200 in 27ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945374 200 in 35ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945374 200 in 32ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945374 200 in 28ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945374 200 in 44ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945374 200 in 35ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945374 200 in 32ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945374 200 in 33ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945374 200 in 37ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945374 200 in 31ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945374 200 in 32ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945374 200 in 36ms
+ GET /api/aircraft/route?hex=aaa90c&minutes=15&max=200&ts=1759945374 200 in 28ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945374 200 in 50ms
+ GET /api/aircraft/route?hex=a28423&minutes=15&max=200&ts=1759945374 200 in 114ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945374 200 in 55ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945374 200 in 34ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945374 200 in 38ms
+ GET /api/aircraft/route?hex=491d87&minutes=15&max=200&ts=1759945374 200 in 39ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945374 200 in 49ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945374 200 in 49ms
+ GET /api/snapshot?ts=1759945398 200 in 28ms
+ GET /api/snapshot?ts=1759945410 200 in 27ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945410 200 in 76ms
+ GET /api/snapshot?ts=1759945432 200 in 26ms
+ GET /api/snapshot?ts=1759945442 200 in 29ms
+ GET /api/snapshot?ts=1759945444 200 in 32ms
+ GET /api/snapshot?ts=1759945472 200 in 33ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945472 200 in 48ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945472 200 in 59ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945472 200 in 32ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945472 200 in 37ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945472 200 in 33ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945472 200 in 31ms
+ GET /api/aircraft/route?hex=a8e24d&minutes=15&max=200&ts=1759945472 200 in 72ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945472 200 in 49ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945472 200 in 46ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945472 200 in 55ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945472 200 in 53ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945472 200 in 52ms
+ GET /api/aircraft/route?hex=a296b6&minutes=15&max=200&ts=1759945472 200 in 65ms
+ GET /api/aircraft/route?hex=a296b6&minutes=15&max=200&ts=1759945472 200 in 47ms
+ GET /api/aircraft/route?hex=a04f75&minutes=15&max=200&ts=1759945472 200 in 35ms
+ GET /api/aircraft/route?hex=a04f75&minutes=15&max=200&ts=1759945472 200 in 40ms
+ ✓ Compiled in 385ms
+ GET /api/aircraft/route?hex=a296b6&minutes=15&max=200&ts=1759945472 200 in 45ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 587ms
+ GET /api/snapshot?ts=1759944600 200 in 239ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 31ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 37ms
+ GET /api/snapshot?ts=1759945578 200 in 23ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945578 200 in 50ms
+ GET /api/aircraft/route?hex=a35da8&minutes=15&max=200&ts=1759945578 200 in 49ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945578 200 in 71ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945578 200 in 63ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945578 200 in 86ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945578 200 in 45ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945578 200 in 40ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945578 200 in 47ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945578 200 in 48ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945578 200 in 49ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945578 200 in 46ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945578 200 in 56ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945578 200 in 50ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945578 200 in 51ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945578 200 in 45ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945578 200 in 52ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945578 200 in 50ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945578 200 in 53ms
+ GET /api/aircraft/route?hex=a4a114&minutes=15&max=200&ts=1759945578 200 in 38ms
+ GET /api/aircraft/route?hex=a4a114&minutes=15&max=200&ts=1759945578 200 in 39ms
+ GET /api/aircraft/route?hex=ad0d35&minutes=15&max=200&ts=1759945578 200 in 41ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945578 200 in 43ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945578 200 in 47ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945578 200 in 45ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945578 200 in 47ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945578 200 in 56ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945578 200 in 51ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945578 200 in 55ms
+ GET /api/snapshot?ts=1759945586 200 in 25ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945586 200 in 53ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945586 200 in 51ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945586 200 in 50ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945586 200 in 56ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945586 200 in 52ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945586 200 in 55ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945586 200 in 48ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945586 200 in 49ms
+ GET /api/snapshot?ts=1759945590 200 in 27ms
+ GET /api/snapshot?ts=1759945592 200 in 25ms
+ GET /api/snapshot?ts=1759945594 200 in 23ms
+ GET /api/snapshot?ts=1759945598 200 in 26ms
+ GET /api/snapshot?ts=1759945600 200 in 34ms
+ GET /api/snapshot?ts=1759945602 200 in 25ms
+ GET /api/snapshot?ts=1759945606 200 in 34ms
+ GET /api/snapshot?ts=1759945608 200 in 24ms
+ GET /api/snapshot?ts=1759945620 200 in 34ms
+ GET /api/snapshot?ts=1759945642 200 in 31ms
+ GET /api/snapshot?ts=1759945662 200 in 40ms
+ GET /api/snapshot?ts=1759945676 200 in 29ms
+ GET /api/snapshot?ts=1759945690 200 in 22ms
+ GET /api/snapshot?ts=1759945688 200 in 31ms
+ ✓ Compiled in 498ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945688 200 in 117ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945688 200 in 35ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945688 200 in 31ms
+ GET /api/aircraft/route?hex=a01805&minutes=15&max=200&ts=1759945688 200 in 86ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945688 200 in 34ms
+ GET /api/aircraft/route?hex=a8352f&minutes=15&max=200&ts=1759945688 200 in 112ms
+ ✓ Compiled in 398ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945688 200 in 31ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945688 200 in 28ms
+ GET /api/aircraft/route?hex=a8e24d&minutes=15&max=200&ts=1759945688 200 in 38ms
+ GET /api/aircraft/route?hex=aa7dad&minutes=15&max=200&ts=1759945688 200 in 33ms
+ GET /api/aircraft/route?hex=ad7b17&minutes=15&max=200&ts=1759945688 200 in 30ms
+ GET /api/aircraft/route?hex=ad7b17&minutes=15&max=200&ts=1759945688 200 in 27ms
+ GET /api/aircraft/route?hex=a3ff01&minutes=15&max=200&ts=1759945688 200 in 33ms
+ GET /api/aircraft/route?hex=a3ff01&minutes=15&max=200&ts=1759945688 200 in 29ms
+ GET /api/aircraft/route?hex=a03bcd&minutes=15&max=200&ts=1759945688 200 in 33ms
+ GET /api/aircraft/route?hex=a03bcd&minutes=15&max=200&ts=1759945688 200 in 31ms
+ GET /api/aircraft/route?hex=acbcfd&minutes=15&max=200&ts=1759945688 200 in 26ms
+ GET /api/aircraft/route?hex=acbcfd&minutes=15&max=200&ts=1759945688 200 in 34ms
+ GET /api/aircraft/route?hex=a35da8&minutes=15&max=200&ts=1759945688 200 in 26ms
+ GET /api/aircraft/route?hex=a35da8&minutes=15&max=200&ts=1759945688 200 in 31ms
+ GET /api/snapshot?ts=1759945818 200 in 26ms
+ GET /api/aircraft/route?hex=a72249&minutes=15&max=200&ts=1759945818 200 in 30ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945818 200 in 33ms
+ GET /api/aircraft/route?hex=c05d3c&minutes=15&max=200&ts=1759945818 200 in 30ms
+ GET /api/aircraft/route?hex=acbcfd&minutes=15&max=200&ts=1759945818 200 in 34ms
+ GET /api/aircraft/route?hex=acbcfd&minutes=15&max=200&ts=1759945818 200 in 34ms
+ GET /api/aircraft/route?hex=adcd6d&minutes=15&max=200&ts=1759945818 200 in 42ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945818 200 in 35ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945818 200 in 29ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945818 200 in 31ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945818 200 in 31ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945818 200 in 32ms
+ GET /api/aircraft/route?hex=ab1d28&minutes=15&max=200&ts=1759945818 200 in 31ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945818 200 in 34ms
+ GET /api/aircraft/route?hex=a06703&minutes=15&max=200&ts=1759945818 200 in 45ms
+ GET /api/aircraft/route?hex=a06703&minutes=15&max=200&ts=1759945818 200 in 29ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945818 200 in 30ms
+ GET /api/aircraft/route?hex=ab8148&minutes=15&max=200&ts=1759945818 200 in 28ms
+ GET /api/aircraft/route?hex=ab8148&minutes=15&max=200&ts=1759945818 200 in 31ms
+ GET /api/aircraft/route?hex=ab8148&minutes=15&max=200&ts=1759945818 200 in 30ms
+ GET /api/aircraft/route?hex=a72249&minutes=15&max=200&ts=1759945818 200 in 36ms
+ GET /api/aircraft/route?hex=a72249&minutes=15&max=200&ts=1759945818 200 in 32ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945818 200 in 27ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945818 200 in 29ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945818 200 in 23ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945818 200 in 31ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945818 200 in 40ms
+ GET /api/snapshot?ts=1759945836 200 in 25ms
+ GET /api/snapshot?ts=1759945842 200 in 36ms
+ GET /api/snapshot?ts=1759945844 200 in 28ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945844 200 in 33ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945844 200 in 24ms
+ GET /api/aircraft/route?hex=a60ee1&minutes=15&max=200&ts=1759945844 200 in 28ms
+ GET /api/aircraft/route?hex=ab6851&minutes=15&max=200&ts=1759945844 200 in 25ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945844 200 in 29ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945844 200 in 28ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945844 200 in 29ms
+ GET /api/aircraft/route?hex=a2195b&minutes=15&max=200&ts=1759945844 200 in 31ms
+ GET /api/aircraft/route?hex=a2195b&minutes=15&max=200&ts=1759945844 200 in 32ms
+ GET /api/aircraft/route?hex=a2195b&minutes=15&max=200&ts=1759945844 200 in 35ms
+ GET /api/aircraft/route?hex=a2195b&minutes=15&max=200&ts=1759945844 200 in 35ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945844 200 in 36ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945844 200 in 35ms
+ GET /api/aircraft/route?hex=a2195b&minutes=15&max=200&ts=1759945844 200 in 98ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945844 200 in 35ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945844 200 in 30ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945844 200 in 29ms
+ GET /api/aircraft/route?hex=a54312&minutes=15&max=200&ts=1759945844 200 in 31ms
+ ✓ Compiled in 366ms
+ ✓ Compiled in 396ms
+ GET /api/aircraft/route?hex=a54312&minutes=15&max=200&ts=1759945844 200 in 39ms
+ GET /api/aircraft/route?hex=a54312&minutes=15&max=200&ts=1759945844 200 in 34ms
+ GET /api/aircraft/route?hex=a05470&minutes=15&max=200&ts=1759945844 200 in 29ms
+ GET /api/aircraft/route?hex=a33aa7&minutes=15&max=200&ts=1759945844 200 in 33ms
+ ✓ Compiled in 385ms
+ ✓ Compiled in 392ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945844 200 in 33ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945844 200 in 37ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945844 200 in 38ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 553ms
+ GET /api/snapshot?ts=1759944600 200 in 309ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a9f87d&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 39ms
+ GET /api/aircraft/route?hex=a9f87d&minutes=15&max=200&ts=1759944600 200 in 20ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=a7debf&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944600 200 in 48ms
+ GET /api/aircraft/route?hex=a3e011&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=a53f5b&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944600 200 in 41ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944600 200 in 33ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 28ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 61ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a12758&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a441d6&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a441d6&minutes=15&max=200&ts=1759944600 200 in 33ms
+ GET /api/aircraft/route?hex=a64ce6&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a1cb05&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 22ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 321ms
+ GET /api/snapshot?ts=1759944600 200 in 241ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 29ms
+ GET /api/snapshot?ts=1759945072 200 in 21ms
+ GET /api/aircraft/route?hex=a99684&minutes=15&max=200&ts=1759945072 200 in 31ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 31ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 28ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 31ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 36ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 28ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 30ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 34ms
+ GET /api/aircraft/route?hex=ac578c&minutes=15&max=200&ts=1759945072 200 in 31ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 39ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 33ms
+ GET /api/aircraft/route?hex=a082fd&minutes=15&max=200&ts=1759945072 200 in 33ms
+ GET /api/aircraft/route?hex=491d87&minutes=15&max=200&ts=1759945072 200 in 32ms
+ GET /api/aircraft/route?hex=491d87&minutes=15&max=200&ts=1759945072 200 in 34ms
+ GET /api/aircraft/route?hex=ac3338&minutes=15&max=200&ts=1759945072 200 in 43ms
+ GET /api/aircraft/route?hex=ac3338&minutes=15&max=200&ts=1759945072 200 in 35ms
+ GET /api/aircraft/route?hex=ac3338&minutes=15&max=200&ts=1759945072 200 in 28ms
+ GET /api/aircraft/route?hex=a89d22&minutes=15&max=200&ts=1759945072 200 in 34ms
+ GET /api/aircraft/route?hex=a89d22&minutes=15&max=200&ts=1759945072 200 in 27ms
+ GET /api/snapshot?ts=1759945322 200 in 27ms
+ GET /api/aircraft/route?hex=a4d04c&minutes=15&max=200&ts=1759945322 200 in 33ms
+ GET /api/aircraft/route?hex=a3e8dc&minutes=15&max=200&ts=1759945322 200 in 30ms
+ GET /api/snapshot?ts=1759945552 200 in 29ms
+ GET /api/snapshot?ts=1759946266 200 in 30ms
+ GET /api/snapshot?ts=1759946320 200 in 27ms
+ GET /api/snapshot?ts=1759946336 200 in 36ms
+ GET /api/snapshot?ts=1759946392 200 in 34ms
+ GET /api/snapshot?ts=1759946398 200 in 26ms
+ GET /api/aircraft/route?hex=a86e35&minutes=15&max=200&ts=1759946398 200 in 36ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759946398 200 in 28ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 33ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 29ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 30ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 38ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 34ms
+ GET /api/aircraft/route?hex=a57030&minutes=15&max=200&ts=1759946398 200 in 42ms
+ GET /api/aircraft/route?hex=a8da2c&minutes=15&max=200&ts=1759946398 200 in 40ms
+ GET /api/aircraft/route?hex=ab394e&minutes=15&max=200&ts=1759946398 200 in 29ms
+ GET /api/aircraft/route?hex=a6b0d2&minutes=15&max=200&ts=1759946398 200 in 41ms
+ GET /api/aircraft/route?hex=a68dba&minutes=15&max=200&ts=1759946398 200 in 25ms
+ GET /api/aircraft/route?hex=a6b0d2&minutes=15&max=200&ts=1759946398 200 in 26ms
+ GET /api/aircraft/route?hex=a6b0d2&minutes=15&max=200&ts=1759946398 200 in 75ms
+ GET /api/aircraft/route?hex=a6c66c&minutes=15&max=200&ts=1759946398 200 in 40ms
+ GET /api/aircraft/route?hex=a57030&minutes=15&max=200&ts=1759946398 200 in 59ms
+ GET /api/aircraft/route?hex=a57030&minutes=15&max=200&ts=1759946398 200 in 125ms
+ GET /api/aircraft/route?hex=a57030&minutes=15&max=200&ts=1759946398 200 in 30ms
+ GET /api/aircraft/route?hex=a8da2c&minutes=15&max=200&ts=1759946398 200 in 31ms
+ GET /api/aircraft/route?hex=a8da2c&minutes=15&max=200&ts=1759946398 200 in 31ms
+ GET /api/aircraft/route?hex=ab394e&minutes=15&max=200&ts=1759946398 200 in 40ms
+ GET /api/aircraft/route?hex=a5fa9f&minutes=15&max=200&ts=1759946398 200 in 29ms
+ GET /api/aircraft/route?hex=a8a0d9&minutes=15&max=200&ts=1759946398 200 in 35ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759946398 200 in 27ms
+ ✓ Compiled in 413ms
+ ✓ Compiled in 421ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 41ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 649ms
+ GET /api/snapshot?ts=1759944600 200 in 298ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 22ms
+ ✓ Compiled in 359ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 36ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 472ms
+ GET /api/snapshot?ts=1759944600 200 in 315ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 36ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 24ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 461ms
+ GET /api/snapshot?ts=1759944600 200 in 206ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a7e122&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=ac38f5&minutes=15&max=200&ts=1759944600 200 in 38ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 28ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 36ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/snapshot?ts=1759944600 200 in 33ms
+ GET /api/snapshot?ts=1759944600 200 in 32ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 315ms
+ GET /api/snapshot?ts=1759944600 200 in 46ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 310ms
+ GET /api/snapshot?ts=1759944600 200 in 268ms
+ GET /api/aircraft/route?hex=8990eb&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=8990eb&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=8990eb&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a53f5b&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a53f5b&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=acba30&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a38439&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a441d6&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a12758&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a3ec93&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=aaf228&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=aaf228&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=aaf228&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=ac38f5&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 73ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 29ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a2270f&minutes=15&max=200&ts=1759944600 200 in 29ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=a6c66c&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a6c66c&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a7e122&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=a5cf19&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a6c66c&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a7e122&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=a037ee&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a037ee&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a5a659&minutes=15&max=200&ts=1759944600 200 in 56ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a7debf&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=aa05e7&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759946198 200 in 56ms
+ GET /api/snapshot?ts=1759946198 200 in 63ms
+ GET /api/snapshot?ts=1759946398 200 in 32ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759946398 200 in 34ms
+ GET /api/aircraft/route?hex=a5255a&minutes=15&max=200&ts=1759946398 200 in 41ms
+ GET /api/aircraft/route?hex=a5255a&minutes=15&max=200&ts=1759946398 200 in 35ms
+ GET /api/aircraft/route?hex=a4ba02&minutes=15&max=200&ts=1759946398 200 in 32ms
+ GET /api/aircraft/route?hex=a4ba02&minutes=15&max=200&ts=1759946398 200 in 28ms
+ GET /api/aircraft/route?hex=a4ba02&minutes=15&max=200&ts=1759946398 200 in 32ms
+ GET /api/aircraft/route?hex=801659&minutes=15&max=200&ts=1759946398 200 in 34ms
+ GET /api/aircraft/route?hex=a08714&minutes=15&max=200&ts=1759946398 200 in 35ms
+ GET /api/aircraft/route?hex=a8a0d9&minutes=15&max=200&ts=1759946398 200 in 32ms
+ GET /api/aircraft/route?hex=a8a0d9&minutes=15&max=200&ts=1759946398 200 in 37ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 30ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 25ms
+ GET /api/aircraft/route?hex=a808f3&minutes=15&max=200&ts=1759946398 200 in 29ms
+ GET /api/snapshot?ts=1759945324 200 in 27ms
+ GET /api/aircraft/route?hex=a86a77&minutes=15&max=200&ts=1759945324 200 in 30ms
+ GET /api/snapshot?ts=1759944670 200 in 45ms
+ GET /api/aircraft/route?hex=ad4930&minutes=15&max=200&ts=1759944670 200 in 27ms
+ GET /api/aircraft/route?hex=ad4930&minutes=15&max=200&ts=1759944670 200 in 29ms
+ GET /api/aircraft/route?hex=aaf228&minutes=15&max=200&ts=1759944670 200 in 37ms
+ GET /api/snapshot?ts=1759944852 200 in 31ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759944852 200 in 27ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759944852 200 in 47ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 35ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 29ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 30ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 34ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 38ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 40ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 30ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 47ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759944852 200 in 48ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759944852 200 in 31ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759944852 200 in 30ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759944852 200 in 30ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 33ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 36ms
+ ✓ Compiled in 434ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 47ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 33ms
+ GET /api/aircraft/route?hex=a9c27a&minutes=15&max=200&ts=1759944852 200 in 42ms
+ ✓ Compiled in 457ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 41ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 35ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 37ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 35ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 29ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 38ms
+ ✓ Compiled in 406ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944852 200 in 60ms
+ GET /api/aircraft/route?hex=a2b10d&minutes=15&max=200&ts=1759944852 200 in 45ms
+ GET /api/snapshot?ts=1759945260 200 in 34ms
+ GET /api/snapshot?ts=1759945396 200 in 26ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945396 200 in 31ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945396 200 in 39ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945396 200 in 32ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 582ms
+ GET /api/snapshot?ts=1759944600 200 in 109ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 30ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 33ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759944600 200 in 50ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 43ms
+ GET /api/aircraft/route?hex=abe579&minutes=15&max=200&ts=1759945396 200 in 48ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 44ms
+ GET /api/aircraft/route?hex=abe579&minutes=15&max=200&ts=1759945396 200 in 39ms
+ GET /api/aircraft/route?hex=abe579&minutes=15&max=200&ts=1759945396 200 in 51ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945396 200 in 38ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945396 200 in 43ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=a7f6f6&minutes=15&max=200&ts=1759945396 200 in 56ms
+ GET /api/aircraft/route?hex=ad4804&minutes=15&max=200&ts=1759945396 200 in 39ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759945396 200 in 59ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 71ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 31ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 33ms
+ GET /api/aircraft/route?hex=abe579&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 30ms
+ GET /api/aircraft/route?hex=add3c7&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 55ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759945396 200 in 52ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759945396 200 in 62ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759945396 200 in 105ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 98ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945396 200 in 96ms
+ GET /api/aircraft/route?hex=add3c7&minutes=15&max=200&ts=1759945396 200 in 82ms
+ GET /api/aircraft/route?hex=add3c7&minutes=15&max=200&ts=1759945396 200 in 45ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945396 200 in 27ms
+ GET /api/aircraft/route?hex=add3c7&minutes=15&max=200&ts=1759945396 200 in 38ms
+ GET /api/aircraft/route?hex=add3c7&minutes=15&max=200&ts=1759945396 200 in 41ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945396 200 in 28ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945396 200 in 30ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945396 200 in 40ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945396 200 in 38ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945396 200 in 41ms
+ GET /api/aircraft/route?hex=a16e7d&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=a8021b&minutes=15&max=200&ts=1759945396 200 in 27ms
+ ✓ Compiled in 461ms
+ ✓ Compiled in 436ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 39ms
+ ✓ Compiled in 404ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945396 200 in 45ms
+ GET /api/aircraft/route?hex=a45586&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=add3c7&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 30ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 30ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 29ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945396 200 in 47ms
+ GET /api/aircraft/route?hex=a16e7d&minutes=15&max=200&ts=1759945396 200 in 30ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945396 200 in 27ms
+ GET /api/aircraft/route?hex=aaab60&minutes=15&max=200&ts=1759945396 200 in 27ms
+ GET /api/aircraft/route?hex=aaa90c&minutes=15&max=200&ts=1759945396 200 in 33ms
+ GET /api/aircraft/route?hex=a17c12&minutes=15&max=200&ts=1759945396 200 in 34ms
+ GET /api/aircraft/route?hex=a7ce6c&minutes=15&max=200&ts=1759945396 200 in 128ms
+ GET /api/aircraft/route?hex=aaf264&minutes=15&max=200&ts=1759945396 200 in 31ms
+ GET /api/aircraft/route?hex=a7ce6c&minutes=15&max=200&ts=1759945396 200 in 31ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759945396 200 in 40ms
+ GET /api/aircraft/route?hex=a46d8f&minutes=15&max=200&ts=1759945396 200 in 29ms
+ GET /api/aircraft/route?hex=a46d8f&minutes=15&max=200&ts=1759945396 200 in 31ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759945396 200 in 40ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759945396 200 in 47ms
+ GET /api/aircraft/route?hex=a46d8f&minutes=15&max=200&ts=1759945396 200 in 45ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 34ms
+ GET /api/aircraft/route?hex=a9d4b5&minutes=15&max=200&ts=1759945396 200 in 43ms
+ GET /api/aircraft/route?hex=a2b10b&minutes=15&max=200&ts=1759945396 200 in 38ms
+ GET /api/aircraft/route?hex=a05626&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945396 200 in 39ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 44ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 43ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 34ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 34ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 44ms
+ GET /api/aircraft/route?hex=abe579&minutes=15&max=200&ts=1759945396 200 in 38ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=ac8efa&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945396 200 in 48ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=a0f428&minutes=15&max=200&ts=1759945396 200 in 30ms
+ GET /api/aircraft/route?hex=a654cb&minutes=15&max=200&ts=1759945396 200 in 49ms
+ GET /api/aircraft/route?hex=add3c7&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=abe579&minutes=15&max=200&ts=1759945396 200 in 33ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759945396 200 in 42ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759945396 200 in 38ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759945396 200 in 40ms
+ GET /api/aircraft/route?hex=a2a536&minutes=15&max=200&ts=1759945396 200 in 40ms
+ GET /api/aircraft/route?hex=a8352f&minutes=15&max=200&ts=1759945396 200 in 51ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945396 200 in 44ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 41ms
+ GET /api/aircraft/route?hex=a7270e&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=a86a77&minutes=15&max=200&ts=1759945396 200 in 37ms
+ GET /api/aircraft/route?hex=a86a77&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=a28423&minutes=15&max=200&ts=1759945396 200 in 43ms
+ GET /api/aircraft/route?hex=a28423&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=491d87&minutes=15&max=200&ts=1759945396 200 in 34ms
+ GET /api/aircraft/route?hex=491d87&minutes=15&max=200&ts=1759945396 200 in 38ms
+ GET /api/aircraft/route?hex=a4aaa0&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 46ms
+ GET /api/aircraft/route?hex=a4caf6&minutes=15&max=200&ts=1759945396 200 in 44ms
+ GET /api/aircraft/route?hex=a1ad1f&minutes=15&max=200&ts=1759945396 200 in 36ms
+ GET /api/aircraft/route?hex=ab62ad&minutes=15&max=200&ts=1759945396 200 in 32ms
+ GET /api/aircraft/route?hex=a28423&minutes=15&max=200&ts=1759945396 200 in 40ms
+ GET /api/aircraft/route?hex=a7270e&minutes=15&max=200&ts=1759945396 200 in 35ms
+ GET /api/aircraft/route?hex=a86a77&minutes=15&max=200&ts=1759945396 200 in 43ms
+ GET /api/aircraft/route?hex=a86a77&minutes=15&max=200&ts=1759945396 200 in 40ms
+ GET /api/aircraft/route?hex=a86a77&minutes=15&max=200&ts=1759945396 200 in 43ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 200 in 879ms
+ GET / 200 in 885ms
+ GET / 500 in 884ms
+ GET / 500 in 889ms
+ GET /api/snapshot?ts=1759944600 200 in 395ms
+ GET /api/snapshot?ts=1759944600 200 in 410ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 46ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944600 200 in 34ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 26ms
+ ✓ Compiled in 376ms
+ ✓ Compiled in 434ms
+ GET /api/snapshot?ts=1759944600 200 in 73ms
+ GET /api/snapshot?ts=1759944600 200 in 78ms
+ ✓ Compiled in 339ms
+ GET /api/snapshot?ts=1759944600 200 in 63ms
+ GET /api/snapshot?ts=1759944600 200 in 59ms
+ ✓ Compiled in 331ms
+ GET /api/snapshot?ts=1759944600 200 in 79ms
+ GET /api/snapshot?ts=1759944600 200 in 107ms
+ ✓ Compiled /api/airlines in 318ms
+ GET /api/airlines 200 in 355ms
+ GET /api/airlines 200 in 360ms
+ ✓ Compiled in 704ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 200 in 1250ms
+ GET /api/snapshot?ts=1759944600 200 in 890ms
+ GET /api/snapshot?ts=1759944600 200 in 892ms
+ GET / 200 in 1259ms
+ GET / 500 in 1275ms
+ GET / 500 in 1275ms
+ GET /api/snapshot?ts=1759944600 200 in 566ms
+ GET /api/snapshot?ts=1759944600 200 in 657ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944600 200 in 64ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/snapshot?ts=1759944942 200 in 32ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 296ms
+ GET /api/snapshot?ts=1759944600 200 in 336ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 589ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 324ms
+ GET /api/snapshot?ts=1759944600 200 in 267ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 44ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=ac38f5&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944600 200 in 28ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 27ms
+ GET /api/aircraft/route?hex=a1c7c1&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=c06e87&minutes=15&max=200&ts=1759944600 200 in 30ms
+ GET /api/aircraft/route?hex=a4460d&minutes=15&max=200&ts=1759944600 200 in 20ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 25ms
+ GET /api/aircraft/route?hex=ababb9&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a9f87d&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a9f87d&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759944600 200 in 28ms
+ GET /api/aircraft/route?hex=a4c03c&minutes=15&max=200&ts=1759944600 200 in 20ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 20ms
+ GET /api/aircraft/route?hex=aa6db8&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=a2270f&minutes=15&max=200&ts=1759944600 200 in 35ms
+ GET /api/aircraft/route?hex=a57e98&minutes=15&max=200&ts=1759944600 200 in 30ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 535ms
+ ⨯ ReferenceError: window is not defined
+    at [project]/components/BlankMap.tsx [app-ssr] (ecmascript) (components/BlankMap.tsx:4:0)
+    at [project]/app/page.tsx [app-ssr] (ecmascript) (app/page.tsx:3:0)
+  2 |
+  3 | import { useEffect, useMemo, useState } from "react";
+> 4 | import {
+  5 |   MapContainer,
+  6 |   TileLayer,
+  7 |   Marker, {
+  digest: '9230641'
+}
+ GET / 500 in 333ms
+ GET /api/snapshot?ts=1759944600 200 in 282ms
+ GET /api/aircraft/route?hex=abfb08&minutes=15&max=200&ts=1759944600 200 in 29ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 20ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 22ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 20ms
+ GET /api/aircraft/route?hex=a8a064&minutes=15&max=200&ts=1759944600 200 in 24ms
+ GET /api/aircraft/route?hex=a3ec93&minutes=15&max=200&ts=1759944600 200 in 23ms
+ GET /api/aircraft/route?hex=a12758&minutes=15&max=200&ts=1759944600 200 in 26ms
+ GET /api/aircraft/route?hex=a3ec93&minutes=15&max=200&ts=1759944600 200 in 21ms
+ GET /api/aircraft/route?hex=a3ec93&minutes=15&max=200&ts=1759944600 200 in 38ms
+ GET /api/aircraft/route?hex=a12758&minutes=15&max=200&ts=1759944600 200 in 47ms
+ GET /api/aircraft/route?hex=a5ece3&minutes=15&max=200&ts=1759944600 200 in 51ms
+ GET /api/aircraft/route?hex=a64ce6&minutes=15&max=200&ts=1759944600 200 in 29ms
+ GET /api/aircraft/route?hex=8990eb&minutes=15&max=200&ts=1759944600 200 in 20ms
