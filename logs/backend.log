@@ -10,3 +10,38 @@ INFO:     Started reloader process [14824] using WatchFiles
 INFO:     Started server process [14886]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14886]
+INFO:     Started server process [46517]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46517]
+INFO:     Started server process [46940]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46940]
+INFO:     Stopping reloader process [14824]
+INFO:     Will watch for changes in these directories: ['/Users/clarkwang/Desktop/CodingMisc/ATCProject/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [17355] using WatchFiles
+INFO:     Started server process [17410]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [17410]
+INFO:     Started server process [24710]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

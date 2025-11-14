@@ -169,9 +169,22 @@ def find_audio_file_for_timestamp(ts: datetime) -> Optional[Tuple[str, datetime]
     """Return (filepath, start_dt) for the file whose start datetime is the latest not after ts.
 
     If none qualifies, return the earliest we can parse.
+    Prioritizes KEWRtwraudio_cut.mp3 if it exists.
     """
+    # Check for the cut file first (starts at 17:38:19 UTC = 17:30 + 08:19 offset)
+    cut_file_path = os.path.join(AUDIO_DIR, "KEWRtwraudio_cut.mp3")
+    if os.path.isfile(cut_file_path):
+        # The cut file starts at 08:19 into the original file (17:30 UTC)
+        # So its effective start time is 2025-10-08 17:38:19 UTC
+        cut_start_dt = datetime(2025, 10, 8, 17, 38, 19, tzinfo=timezone.utc)
+        if cut_start_dt <= ts:
+            return (cut_file_path, cut_start_dt)
+    
     candidates: List[Tuple[datetime, str]] = []
     for path in list_audio_files():
+        # Skip the cut file as we've already handled it
+        if os.path.basename(path) == "KEWRtwraudio_cut.mp3":
+            continue
         dt = parse_audio_filename_to_dt(path)
         if dt is not None:
             candidates.append((dt, path))
